@@ -1,0 +1,202 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Michelle and James</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
+  <script src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("jquery", "1.4.2");
+  </script>
+
+<style type="text/css">
+
+body {
+    background: url('/pattern.jpg') #FFF;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+a, a:link, a:visited, a:hover {
+    color: #8E2D2D;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a:hover {
+    text-decoration: none;
+}
+
+
+h1 {
+    margin-top: 0.5em;
+    font-size: 320%;
+    text-shadow: none;
+	line-height: 1.2em;
+}
+
+h2 {
+    font-weight: normal;
+    text-shadow: none;
+font-size: 140%;
+}
+
+h1 + h2 {
+     margin-top: 0em; 
+}
+
+h3 {
+    padding-top: 0.5em;
+}
+
+#sitewrap {
+    background: #fff;
+    width: 600px;
+}
+
+#breadcrumb {
+    text-align: left;
+    margin-top: 1em;
+}
+
+#content {
+    text-align: left;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #333;
+}
+
+#footnotes {
+	margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #333;
+    font-size: 110%;
+    padding-bottom: 3em;
+    margin-bottom: 2em;
+}
+
+ol {
+	padding-top: 1em;
+}
+
+ol li {
+    list-style-type: decimal;
+    padding-bottom: 1em;
+}
+
+ul li {
+    list-style-type: disc;
+    padding-bottom: 1em;
+    font-size: 120%;
+}
+
+ul li.last {
+    padding-bottom: 0;
+}
+
+li img {
+	display: block;
+	margin: 0.5em 0 1.5em 0;
+}
+
+sup {
+    font-size: 70%;
+}
+
+#pictureframe {
+    margin-top: 0.5em;
+    text-align: center;
+}
+</style>
+
+
+</head>
+<body>
+<div id="sitewrap">
+<h1><a href="/">Michelle and James are Getting Married</a></h1>
+<h2>24 September 2011 &#8226; <a href="https://reservations.ihotelier.com/crs/g_reservation.cfm?groupID=573568&hotelID=13514">The Allerton Hotel</a>, Chicago, Illinois, USA.</h2>
+
+<div id="content">
+<div id="pictureframe">
+
+<img id="image" src="/p/eggs.jpg" onclick="nextPicture();" />
+<p class="caption" id="caption">Two good eggs found each other in Champaign, Illinois, USA. August 2008.</p>
+</div>
+
+
+<h3>Arrival Information</h3>
+<p>Transportation is easy and abundant from O'Hare International to The Allerton. These are some of the options:</p>
+<ul>
+<li>Follow <a href="http://goo.gl/maps/fCS8">Google's directions.</a></li>
+<li>Alternatively, take the Blue line from O'Hare airport into downtown Chicago getting off at Monroe, walk three blocks south on Dearborn (toward Jackson St). At the corner of Dearborn & Jackson take the 151 bus toward Devon & Clark. Get off at Michigan & Huron (The Allerton will be on the right).</li>
+<li>Take the Blue line to Clark and Lake. A taxi ride from Clark and Lake to The Allerton Hotel costs about $10.</li>
+<li>Take a taxi directly from O'Hare to The Allerton Hotel. $35-40 if outside of rush hour.</li>
+</ul>
+
+<h3>See and Do</h3>
+<p>Chicago is a large city.</p>
+<ul>
+<li>Visit the <a href="http://www.artic.edu/aic/">Art Institute of Chicago</a> and see <a href="http://en.wikipedia.org/wiki/Edward_Hopper">Edward Hopper's</a> <a href="http://en.wikipedia.org/wiki/Nighthawks">Nighthawks</a> and <a href="http://en.wikipedia.org/wiki/Grant_Wood">Grant Wood's</a> <a href="http://en.wikipedia.org/wiki/American_gothic">American Gothic</a> and <a href="http://www.artic.edu/aic/collections/artwork/category/109">other notable works</a>.</li>
+<li>Follow the recommendations of others: <a href="http://www.nytimes.com/2010/09/26/travel/26hours.html">New York Times</a>, <a href="http://www.lonelyplanet.com/usa/chicago/activities">Lonely Planet</a>, <a href="http://www.explorechicago.org/city/en.html">Chicago Tourism site</a></li>
+</ul>
+</div>
+
+<div id="footnotes">Questions? <a href="mailto:us@michelleandjames.net">us@michelleandjames.net</a></div>
+
+</div>
+
+<script type="text/javascript">
+var index = 0;
+var pictures = [
+    {"url":"/p/eggs.jpg", "title" : "Two good eggs found each other in Champaign, Illinois, USA. August 2008.", "hex":"#B2A988"},  
+    {"url":"/p/bean.jpg", "title":"At <a href=\"http://en.wikipedia.org/wiki/Cloud_gate\">The Bean</a>, Chicago, Illinois, USA. November 2008.", "hex":"#D6D0BD"},
+    {"url":"/p/hike.jpg", "title":"Mid-west legs, sub-25F, snow and ice hiking to <a href=\"http://en.wikipedia.org/wiki/Charlies_Bunion\">Charlies Bunion</a>, Tennessee and North Carolina state line, USA. March 2009.", "hex":"#FFFFFF"},
+    {"url":"/p/j.jpg", "title":"Urbana, Illinois. June 2009.", "hex":"#8E3935"},
+    {"url":"/p/stand.jpg", "title":"Cantaloupe stand, Southern Illinois, USA. July 2009.", "hex":"#CC0C3D"},
+    {"url":"/p/m.jpg", "title":"Aurora, Illinois, USA. December 2009.", "hex":"#926C3F"},
+    {"url":"/p/2941.jpg", "title":"Post-dinner smiles at <a href=\"http://www.2941.com/\">2941</a>, Falls Church, VA, USA. April 2010.", "hex":"#573e5f"},
+    {"url":"/p/blast.jpg", "title":"Blast off at the <a href=\"http://en.wikipedia.org/wiki/National_Air_and_Space_Museum\">National Air and Space Museum</a>, Washington, D.C., USA. April 2010.", "hex":"FD9029"},
+    {"url":"/p/oak.jpg", "title" :"Not stealing acorns at the <a href=\"http://en.wikipedia.org/wiki/Major_Oak\">Major Oak</a>, Nottinghamshire, England. June 2010.", "hex":"#70C162"},
+    {"url":"/p/msit.jpg", "title" : "Michelle loves sitting. London, England. June 2010.", "hex":"#306507"}];
+
+function nextPicture() {
+    $("#pictureframe").addClass("dimmed");
+    document.getElementById('caption').innerHTML = "<em>Loading another photograph...</em>";
+    index++;
+    if (index >= pictures.length) {
+        index = 0;
+    }
+    document.getElementById("image").src = pictures[index]["url"];
+ }
+
+function changePicture() {
+    document.getElementById("caption").href = "/";
+    document.getElementById("caption").innerHTML = pictures[index]["title"];
+    document.getElementById("image").title = "Click for another photograph";
+    //document.getElementById("sitehead").style.backgroundColor = pictures[index]["hex"];
+}
+
+$("#image").load(function(){changePicture();$("#pictureframe").removeClass("dimmed");});
+
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-266835-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

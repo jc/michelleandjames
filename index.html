@@ -1,0 +1,76 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Michelle and James</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
+  <script src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("jquery", "1.4.2");
+  </script>
+</head>
+<body>
+<div id="sitehead" style="background-color:#B40404"><h1>Michelle and James</h1></div>
+<div id="sitewrap">
+<div id="pictureframe">
+
+<img id="image" src="/p/eggs.jpg" onclick="nextPicture();" />
+<p class="caption" id="caption">Two good eggs found each other in Champaign, Illinois, USA. August 2008.</p>
+</div>
+<h2>Save the Date</h2>
+<p>24 September 2011 at <a href="https://reservations.ihotelier.com/crs/g_reservation.cfm?groupID=573568&hotelID=13514">The Allerton Hotel</a>, Chicago, Illinois, USA.</p>
+
+</div>
+<div id="foot">Questions? <a href="mailto:us@michelleandjames.net">us@michelleandjames.net</a></div>
+<script type="text/javascript">
+var index = 0;
+var pictures = [
+    {"url":"/p/eggs.jpg", "title" : "Two good eggs found each other in Champaign, Illinois, USA. August 2008.", "hex":"#B2A988"},  
+    {"url":"/p/bean.jpg", "title":"At <a href=\"http://en.wikipedia.org/wiki/Cloud_gate\">The Bean</a>, Chicago, Illinois, USA. November 2008.", "hex":"#D6D0BD"},
+    {"url":"/p/hike.jpg", "title":"Mid-west legs, sub-25F, snow and ice hiking to <a href=\"http://en.wikipedia.org/wiki/Charlies_Bunion\">Charlies Bunion</a>, Tennessee and North Carolina state line, USA. March 2009.", "hex":"#FFFFFF"},
+    {"url":"/p/j.jpg", "title":"Urbana, Illinois. June 2009.", "hex":"#8E3935"},
+    {"url":"/p/stand.jpg", "title":"Cantaloupe stand, Southern Illinois, USA. July 2009.", "hex":"#CC0C3D"},
+    {"url":"/p/m.jpg", "title":"Aurora, Illinois, USA. December 2009.", "hex":"#926C3F"},
+    {"url":"/p/2941.jpg", "title":"Post-dinner smiles at <a href=\"http://www.2941.com/\">2941</a>, Falls Church, VA, USA. April 2010.", "hex":"#573e5f"},
+    {"url":"/p/blast.jpg", "title":"Blast off at the <a href=\"http://en.wikipedia.org/wiki/National_Air_and_Space_Museum\">National Air and Space Museum</a>, Washington, D.C., USA. April 2010.", "hex":"FD9029"},
+    {"url":"/p/oak.jpg", "title" :"Not stealing acorns at the <a href=\"http://en.wikipedia.org/wiki/Major_Oak\">Major Oak</a>, Nottinghamshire, England. June 2010.", "hex":"#70C162"},
+    {"url":"/p/msit.jpg", "title" : "Michelle loves sitting. London, England. June 2010.", "hex":"#306507"}];
+
+function nextPicture() {
+    $("#pictureframe").addClass("dimmed");
+    document.getElementById('caption').innerHTML = "<em>Loading another photograph...</em>";
+    index++;
+    if (index >= pictures.length) {
+        index = 0;
+    }
+    document.getElementById("image").src = pictures[index]["url"];
+ }
+
+function changePicture() {
+    document.getElementById("caption").href = "/";
+    document.getElementById("caption").innerHTML = pictures[index]["title"];
+    document.getElementById("image").title = "Click for another photograph";
+    //document.getElementById("sitehead").style.backgroundColor = pictures[index]["hex"];
+}
+
+$("#image").load(function(){changePicture();$("#pictureframe").removeClass("dimmed");});
+
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-266835-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
