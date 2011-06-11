@@ -82,6 +82,10 @@ h1 {
     filter:alpha(opacity=50);
 }
 
+.image img {
+    margin-bottom: 1em;
+}
+
 p { font-size: 120%; }
 
 p.caption {
