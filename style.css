@@ -69,7 +69,7 @@ h1 {
 #pictureframe img, .image img {
     padding: 3px;
     /*min-height: 375px;*/
-    width: 500px;
+    /*width: 500px;*/
     cursor: pointer;
     background: #dfdfdf;
     -webkit-box-shadow: 3px 4px 8px #111;
