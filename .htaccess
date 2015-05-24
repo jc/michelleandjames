@@ -2,5 +2,6 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} !^michelleandjames\.net [NC]
 RewriteCond %{HTTP_HOST}   !^$          
 RewriteRule ^(.*)$ http://michelleandjames.net/$1 [R=301,NE]
-DirectoryIndex henry
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+DirectoryIndex henry.html
