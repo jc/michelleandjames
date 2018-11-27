@@ -1,8 +1,8 @@
 {
+    "version": 2,
     "name": "michelleandjames",
-    "type": "static",
     "alias": ["michelleandjames.net"],
-    "static": {
-        "directoryListing": false
-    }
+    "routes": [
+        { "src": "^/$", "dest": "/jackson.html" }
+    ]
 }
