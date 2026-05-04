@@ -1,0 +1,20 @@
+{
+  "name": "michelleandjames",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/jackson.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(jpg|jpeg|gif|png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2628000"
+        }
+      ]
+    }
+  ]
+}
